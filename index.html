@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulsmatic</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body onkeypress="pushButton()">
+    <div class="container-info">
+        <h1>Pulsmatic</h1>
+        <h2>Diese App berechnet deinen Puls.</h2>
+        <iframe class="measuretutorial" src="https://www.youtube-nocookie.com/embed/ffmGIlgEA6k"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <div class="container-input">
+        <p class="result" id="result">Bist du bereit? Starte das Programm!</p>
+        <button class="button-start" id="button-start" onclick="start()">Programm starten</button>
+        <button class="button-count d-none" id="button-count" onclick="count()">bei jedem Pulsschlag: hier klicken oder beliebige Taste drücken.</button>
+        <button class="button-newstart d-none" id="button-newstart" onclick="newstart()">Neu starten</button>
+    </div>
+
+</body>
+
+</html>
